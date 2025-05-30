@@ -1,0 +1,594 @@
+body {
+    background: #1e2028;
+    color: #ebebeb;
+    margin: 0;
+    padding: 0;
+    font-size: 19px; 
+    
+}
+
+.light-theme {
+    background: #ebebeb;
+    color: #1e2028;
+}
+
+.light-theme .link {
+    color: #000 !important;
+}
+
+.light-theme .footer, .light-theme .form, .light-theme .container  {
+    background: #ebebeb !important;
+    color: #000 !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2em; 
+    font-weight: bold;
+}
+
+.header {
+    display: block;
+    padding: 15px;
+    margin: 0;
+    box-shadow: 0 0 25px 2px #030b1172;
+   
+      
+      }
+
+.header .link {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ebebeb;
+    font-size: 20px;  
+     text-align: center;
+}
+
+.nav:hover .header {
+    display: block;
+    text-align: center;
+}
+
+.link-btn {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ebebeb;
+    font-size: 20px;  
+    position: absolute;
+    right: 55px;
+    background: #252731;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+
+.padding {
+    padding: 15px;
+    margin: 15px;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.headline {
+    font-size: 43px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section-headline {
+    color: #ff9f43;
+}
+
+.subsection-headline {
+    color: #694ceb;
+}
+
+.delete-btn {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background: #ff0000;
+    color: #ffffff;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    background: #ff6600;
+}
+
+.Edit-btn {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background: #ff0000;
+    color: #ffffff;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.Edit-btn:hover {
+    background: #ff6600;
+}
+.logo {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.full {
+    width: 100%;
+}
+
+.btn {
+    display: block;
+    background: #7c5dff;
+    padding: 15px;
+    margin: 5px ;
+    border-radius: 15px;
+    width: 200px;
+    text-decoration: none;
+    color: #ebebeb;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center; 
+       
+}
+
+.btn:hover {
+    background: #694ceb;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    width: 85%;
+    margin: 15px auto;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    gap: 2px;
+    
+}
+
+.list .list-item {
+    width: 30%;
+    background: #fafafa;
+    padding: 10px;
+    margin: 2px;
+    vertical-align: top;
+    color: #000;
+    text-align: justify;
+    padding-bottom: 45px;
+    border-radius: 20px;
+}
+
+.list-item .item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+   
+}
+
+.list-item img {
+    width: 100%;
+    height: 320px;
+    border-radius: 20px;
+}
+
+.list-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.list-btn {
+    display: block;
+    margin: 15px;
+    background: #7c5dff;
+    text-align: center;
+    padding: 15px;
+    margin: 5px auto;
+    border-radius: 15px;
+    width: 200px;
+    text-decoration: none;
+    color: #ebebeb;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    justify-content: center; 
+}
+
+.list-btn:hover {
+    background: #694ceb;
+}
+
+.list-item-qty {
+    margin: 5px;
+    padding: 15px;
+}
+
+.list-item-qty input,
+.list-item-qty button {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 8px;
+    background: #ffffff;
+}
+
+.list-item-qty input {
+    border-radius: 0;
+}
+
+.list-item-qty button {
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    color: #ebebeb;
+    padding: 8px;
+    background: #252731;
+    margin-top: 10px;
+    margin: 0;
+}
+
+.footer a {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 4px 8px;
+    color: #ff9f43;
+    text-decoration: none;
+}
+
+.footer img {
+    width: 30px;
+    margin: 5px;
+}
+
+.box-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-list .box {
+    width: 20%;
+    box-shadow: 0px 7px 15px 2px #0000001a;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.box-purple {
+    background: #7c5dff;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #f9f9f9;
+}
+
+.box-purple .icon {
+    width: 50px;
+}
+
+.box-purple:hover {
+    background: #694ceb;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 20px;
+    background: #252731;
+    border-radius: 15px;
+    width: 60%;
+    border: 1px solid #808080; 
+}
+
+.form input,
+form textarea,
+.input {
+    display: block;
+    padding:8px;
+    margin: 8px 0;
+    border-radius: 3px;
+    background: #dedbdb;
+    outline: none;
+    border: none;
+}
+
+.form label,
+.label {
+    margin: 10px 0;
+}
+
+.question-container {
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 15px;
+    margin-bottom: 10px; 
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+/*
+@media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+}*/
+ 
+ 
+.cart-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    width: 75%;
+    margin: 15px auto;
+    background: #252731;
+    border-radius: 15px;
+    padding: 15px ;}
+    
+
+.mobile-btn {
+    display: none;
+}
+
+.analysis-report {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  
+  .analysis-report h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .list,
+    .box-list {
+        width: 100%;
+        display: block;
+        margin: 5px;
+    }
+
+    .list .list-item,
+    .box-list .box,
+    .form {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .header .link {
+        display: block;
+        text-align: center;
+    }
+
+    .link-btn {
+        display: block;
+        text-align: center;
+        position: relative;
+        margin: auto;
+        right: auto;
+        background: transparent;
+    }
+
+    .mobile-btn {
+        display: block;
+        background: none;
+        outline: none;
+        border: none;
+        color: #dedbdb;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .nav:hover .header {
+        display: block;
+    }
+
+    .container,
+    .container>div,
+    .input {
+        display: block;
+        width: 90% !important;
+    }
+
+}
+
+@media print {
+    body {
+        background: #fff;
+    }
+    * {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .print * {
+        visibility: visible;
+    }
+
+    .print {
+        width: 100%;
+        margin: 0;
+    }
+
+    button {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+   /* تنسيق زر الترجمة */
+#translate-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+    transform: scale(0.95);
+    max-width: 150px;
+    white-space: nowrap;
+    margin: 5px 10px;
+}
+
+/* الترجمة في الوضع النهاري */
+.light-theme #translate-container {
+    background-color: #ebebeb;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+    #translate-container {
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        width: 80%;
+        padding: 8px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .light-theme #translate-container {
+        background-color: #ebebeb;
+    }
+}
+
+/* زر الوضع داخل الهيدر بشكل طبيعي */
+.theme-toggle-btn {
+    display: inline-block;
+    padding: 6px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.theme-toggle-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+/* في الجوال: يصير block زي الروابط */
+@media only screen and (max-width: 768px) {
+    .theme-toggle-btn {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+/* زر تسجيل الدخول / My Profile */
+.link-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: #252731;
+    color: #ebebeb;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    min-width: 130px;
+}
+
+/* عند المرور */
+.link-btn:hover {
+    background-color: #3b3e49;
+    color: #ff9f43;
+}
+
+/* الوضع النهاري */
+.light-theme .link-btn {
+    background: #d5d5d5;
+    color: #1e2028;
+}
+
+.light-theme .link-btn:hover {
+    background-color: #c4c4c4;
+    color: #ff9f43;
+}
+
+/* في الجوال */
+@media only screen and (max-width: 768px) {
+    .link-btn {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        width: 80%;
+    }
+}
