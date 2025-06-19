@@ -55,29 +55,29 @@ export default function OrdersList() {
             });
     }
 
-    function handleReport(e) {
-        e.preventDefault();
+    function handleReport(e) {  //filter function 
+        e.preventDefault();    // منع الارسال الافتراضي 
         setMsg(null);
 
-        const from = e.target.from.value;
+        const from = e.target.from.value;  // date
         const to = e.target.to.value;
-        const product = e.target.product.value;
+        const product = e.target.product.value; // product 
         let tmpArr = [];
 
-        if (!from && !to && product === 'all') {
+        if (!from && !to && product === 'all') {  // if nothing selected 
             setMsg("Please select a filter: date range or product.");
             return;
         }
 
         if (product === 'all') {
-            tmpArr = shadowData.filter(item =>
+            tmpArr = shadowData.filter(item =>   // filter based on date only without select product 
                 new Date(item.created_at) >= new Date(from + " 00:00:00") &&
                 new Date(item.created_at) <= new Date(to + " 23:59:59")
             );
             setData(tmpArr);
             if (tmpArr.length === 0) setMsg("No orders found for selected date range.");
         } else {
-            supabase
+            supabase  // filter based on product < call the table and display order contains the product
                 .from("orders_items")
                 .select(`
                     *,
